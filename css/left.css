@@ -1,0 +1,105 @@
+
+
+
+body {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #38bbbf 0%, #5785de 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.clearfix {
+    clear: both;
+}
+
+/* 登录表单样式 */
+form {
+      text-align: left;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+form:hover {  text-align: left;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {  text-align: left;
+    margin-bottom: 20px;
+}
+
+form label {  text-align: left;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {  text-align: left;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {  text-align: left;
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {  text-align: left;
+    background: #185adb;
+}
+
+/* 输入框聚焦效果 */
+input[type="text"]:focus,
+input[type="password"]:focus {  text-align: left;
+    border-color: #2575fc;
+    outline: none;
+}
+
+/* 简单的表单项动画 */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+/* 为每个表单项设置不同的动画延迟 */
+.form-group:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.form-group:nth-child(2) {
+    animation-delay: 0.2s;
+}
+button {
+    animation-delay: 0.3s;
+}
+.sidebar {
+    position: fixed; /* 或 absolute，取决于需求 */
+    left: 0; /* 对于左侧侧边栏 */
+    top: 0;
+    width: 250px; /* 侧边栏宽度 */
+    height: 100%;
+    background-color: #f4f4f4; /* 侧边栏背景色 */
+}
